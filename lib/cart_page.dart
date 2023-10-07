@@ -21,7 +21,7 @@ class _CartPageState extends State<CartPage> {
     {
       'productName': 'T-Shirt',
       'photo':
-          'https://ecstasybd.com/all-images/product/Product-Image-1685858190.jpg',
+          'https://mir-s3-cdn-cf.behance.net/project_modules/1400/68993788541761.5dd95dc31b698.jpg',
       'color': 'Gray',
       'size': 'L',
       'price': '30'
@@ -29,7 +29,7 @@ class _CartPageState extends State<CartPage> {
     {
       'productName': 'Sport Dress',
       'photo':
-          'https://ecstasybd.com/all-images/product/Product-Image-1685858190.jpg',
+          'https://www.jteesports.com/cdn/shop/products/jtee-006_compressed.jpg',
       'color': 'Black',
       'size': 'M',
       'price': '43'
@@ -89,6 +89,7 @@ class _CartPageState extends State<CartPage> {
             onPressed: () {},
             icon: Icon(Icons.search),
             color: Colors.black,
+            iconSize: 15.sp,
           )
         ],
       ),
@@ -96,39 +97,22 @@ class _CartPageState extends State<CartPage> {
         padding: EdgeInsets.only(left: 4.w, right: 4.w),
         child: Column(
           children: [
-            SizerUtil.orientation == Orientation.landscape
-                ? Expanded(
-                    flex: 20,
-                    child: Column(
-                      children: [
-                        Align(
-                          alignment: Alignment.topLeft,
-                          child: Text(
-                            'My Bag',
-                            style: TextStyle(
-                              fontSize: 20.sp,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
+            Expanded(
+                flex: 10,
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        'My Bag',
+                        style: TextStyle(
+                          fontSize: 23.sp,
+                          fontWeight: FontWeight.w600,
                         ),
-                      ],
-                    ))
-                : Expanded(
-                    flex: 10,
-                    child: Column(
-                      children: [
-                        Align(
-                          alignment: Alignment.topLeft,
-                          child: Text(
-                            'My Bag',
-                            style: TextStyle(
-                              fontSize: 23.sp,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                      ],
-                    )),
+                      ),
+                    ),
+                  ],
+                )),
             Expanded(
                 flex: 90,
                 child: ListView.builder(

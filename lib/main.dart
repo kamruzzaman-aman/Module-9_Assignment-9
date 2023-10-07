@@ -4,11 +4,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:ostad_my_app/cart_page.dart';
 import 'package:sizer/sizer.dart';
 void main() {
-  runApp(DevicePreview(
-      builder: (context) {
-        return MyApp();
-      }
-  ));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
