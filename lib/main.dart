@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:ostad_my_app/cart_page.dart';
-import 'package:sizer/sizer.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 void main() {
   runApp(MyApp());
 }
@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Sizer(
-      builder: (context, orientation, deviceType) {
+    return ResponsiveApp(
+      builder: (context) {
         return MaterialApp(
           themeMode: ThemeMode.system,
           debugShowCheckedModeBanner: false,
